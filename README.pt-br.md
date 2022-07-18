@@ -3,7 +3,7 @@
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/hoiast/ExoplanetTransitSimulator/blob/main/README.md)
 [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/hoiast/ExoplanetTransitSimulator/blob/main/README.pt-br.md)
 
-####Live Demo: [GitHub.io](https://hoiast.github.io/ExoplanetTransitSimulator/) 
+#### Live Demo: [GitHub.io](https://hoiast.github.io/ExoplanetTransitSimulator/) 
 
 ExoplanetTransitSimulator é uma aplicação web educacional para explorar a técnica de detecção de exoplanetas chamada **Método de Trânsito**. Simplificando, este método analisa diminuições periódicas nas medidas de brilho estrelar causadas por planetas bloqueando a luz durante os seus movimentos orbitais.
 
