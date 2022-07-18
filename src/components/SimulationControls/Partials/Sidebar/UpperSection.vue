@@ -77,7 +77,7 @@ watch(selectedLocale, () => {
       optionLabel="name"
       :optionGroupChildren="[]"
     />
-    <a href="https://github.com/hoiast/transit-method" target="_blank">
+    <a href="https://github.com/hoiast/ExoplanetTransitSimulator" target="_blank">
       <Button
         icon="pi pi-github"
         class="p-button-rounded p-button-text ml-4"
