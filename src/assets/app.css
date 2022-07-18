@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin    : 0;
+  padding   : 0;
+  font-family: 'sans-serif', 'Corbel', 'Lucida Grande', 'Lucida Sans Unicode',
+    'Lucida Sans', 'DejaVu Sans', 'Bitstream Vera Sans', 'Liberation Sans',
+    'Verdana', 'Verdana Ref';
+}
+
+*::-webkit-scrollbar {
+  width        : 12px;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(46, 46, 46);
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-yellow-300;
+  border-radius: 20px;
+  border       : 3px solid rgb(46, 46, 46);
+}
+
+/* ------------------ */
+/* PRIMEVUE CSS FIXES */
+/* ------------------ */
+/* Nested accordions, which are not in the first accordion tab of their parent accordions, doesn't have border-top on their first own accordion tab*/
+.p-accordion .p-accordion-tab:not(:first-child) .p-toggleable-content .p-accordion-content .p-accordion .p-accordion-tab:first-child .p-accordion-header .p-accordion-header-link {
+  border-top: 1px solid #383838;
+}
+
+/* ------------------------ */
+/* PRIMEVUE CSS ADJUSTMENTS */
+/* ------------------------ */
+.p-inputnumber-input,
+.p-tooltip-text {
+  @apply text-center;
+}
+
+.p-tooltip,
+.p-dialog-mask,
+.p-cascadeselect-panel {
+  @apply z-10;
+}
+
+.p-slider-horizontal,
+.p-inputtext {
+  width: 100%;
+}
+
+.p-dialog-content {
+  height: inherit;
+}
+
+.p-slider-vertical {
+  height: 14rem;
+}
+
+.p-inputswitch {
+  height: 1.5rem;
+}
+
+.p-divider-solid.p-divider-horizontal:before {
+  border-top-style: solid !important;
+}
+
+.p-divider-dashed.p-divider-horizontal:before {
+  border-top-style: dashed !important;
+}
+
+.p-divider-solid.p-divider-vertical:before {
+  border-left-style: solid !important;
+}
