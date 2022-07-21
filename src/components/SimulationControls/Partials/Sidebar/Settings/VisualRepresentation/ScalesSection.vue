@@ -39,7 +39,7 @@ watch(props, () => {
       :tooltipText="$t('Scale apparent size of the star')"
       v-model="starSize"
       :isTooltipDisabled="isTooltipDisabled"
-      v-on:update:modelValue="$emit('update:starSize', starSize)"
+      @update:modelValue="$emit('update:starSize', starSize)"
     />
     <InputNumberWithSlider
       :inputId="`planetSize`"
@@ -50,7 +50,7 @@ watch(props, () => {
       :tooltipText="$t('Scale apparent size of planets')"
       v-model="planetSize"
       :isTooltipDisabled="isTooltipDisabled"
-      v-on:update:modelValue="$emit('update:planetSize', planetSize)"
+      @update:modelValue="$emit('update:planetSize', planetSize)"
     />
     <template v-if="isAdvancedSettingsActive">
       <Divider align="center">
@@ -65,7 +65,7 @@ watch(props, () => {
         :tooltipText="$t('Scale apparent size of satellites')"
         v-model="satelliteSize"
         :isTooltipDisabled="isTooltipDisabled"
-        v-on:update:modelValue="$emit('update:satelliteSize', satelliteSize)"
+        @update:modelValue="$emit('update:satelliteSize', satelliteSize)"
       />
 
       <Divider align="center">
@@ -80,7 +80,7 @@ watch(props, () => {
         :tooltipText="$t('Scale apparent orbit radius of planets')"
         v-model="planetDistance"
         :isTooltipDisabled="isTooltipDisabled"
-        v-on:update:modelValue="$emit('update:planetDistance', planetDistance)"
+        @update:modelValue="$emit('update:planetDistance', planetDistance)"
       />
       <InputNumberWithSlider
         :inputId="`satelliteDistance`"
@@ -91,7 +91,7 @@ watch(props, () => {
         :tooltipText="$t('Scale apparent orbit radius of satellites')"
         v-model="satelliteDistance"
         :isTooltipDisabled="isTooltipDisabled"
-        v-on:update:modelValue="
+        @update:modelValue="
           $emit('update:satelliteDistance', satelliteDistance)
         "
       />

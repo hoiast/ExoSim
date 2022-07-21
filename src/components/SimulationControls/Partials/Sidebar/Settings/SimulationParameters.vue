@@ -38,7 +38,7 @@ watch(props, () => {
       "
       v-model="simulationSpeed"
       :isTooltipDisabled="isTooltipDisabled"
-      v-on:update:modelValue="$emit('update:simulationSpeed', simulationSpeed)"
+      @update:modelValue="$emit('update:simulationSpeed', simulationSpeed)"
     />
 
     <template v-if="isAdvancedSettingsActive">
@@ -58,7 +58,7 @@ watch(props, () => {
         "
         v-model="simulationStep"
         :isTooltipDisabled="isTooltipDisabled"
-        v-on:update:modelValue="$emit('update:simulationStep', simulationStep)"
+        @update:modelValue="$emit('update:simulationStep', simulationStep)"
       />
 
       <InputSwitchWithTitle
@@ -71,7 +71,7 @@ watch(props, () => {
           )
         "
         :isTooltipDisabled="isTooltipDisabled"
-        v-on:update:modelValue="
+        @update:modelValue="
           $emit('update:areOrbitsTilted', areOrbitsTilted)
         "
       />
@@ -84,7 +84,7 @@ watch(props, () => {
           )
         "
         :isTooltipDisabled="isTooltipDisabled"
-        v-on:update:modelValue="
+        @update:modelValue="
           $emit('update:isRotationEnabled', isRotationEnabled)
         "
       />

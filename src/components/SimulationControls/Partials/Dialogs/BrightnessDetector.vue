@@ -151,11 +151,11 @@ translatePlot();
 <template>
   <Dialog
     :header="$t('Brightness Detector')"
-    v-on:maximize="isMeasurerMaximized = true"
-    v-on:unmaximize="isMeasurerMaximized = false"
-    v-on:hide="isMeasurerMaximized = false"
+    @maximize="isMeasurerMaximized = true"
+    @unmaximize="isMeasurerMaximized = false"
+    @hide="isMeasurerMaximized = false"
     v-model:visible="isMeasuringBrightness"
-    v-on:update:visible="
+    @update:visible="
       $emit('update:isMeasuringBrightness', isMeasuringBrightness);
       reset();
     "
@@ -185,7 +185,7 @@ translatePlot();
         :label="$t('Reset Measurements')"
         icon="pi pi-replay"
         class="p-button-help p-button-sm"
-        v-on:click="$emit('resetDataPoints')"
+        @click="$emit('resetDataPoints')"
         :disabled="isCollectingData"
         v-tooltip.bottom="{
           value: $t(
@@ -204,7 +204,7 @@ translatePlot();
         :class="
           isCollectingData ? 'p-button-danger p-button-sm' : ' p-button-sm'
         "
-        v-on:click="toggleDataCollection"
+        @click="toggleDataCollection"
         v-tooltip.bottom="{
           value: $t(
             'Store new measurements in collections for further analysis. Collections can be accessed in the menu below.'

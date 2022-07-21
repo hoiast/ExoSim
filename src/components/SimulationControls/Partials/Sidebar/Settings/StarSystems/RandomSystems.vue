@@ -38,7 +38,7 @@ defineExpose({
         <Button
           icon="pi pi-sync"
           class="p-button-rounded ml-2"
-          v-on:click="generateRandomNumber"
+          @click="generateRandomNumber"
           v-tooltip.bottom="{
             value: $t('Generate a random seed'),
             disabled: isTooltipDisabled,
@@ -51,7 +51,7 @@ defineExpose({
         type="submit"
         :label="$t('Create Star System')"
         class="p-button-outlined"
-        v-on:click="$emit('updateStarSystem', randomSeed)"
+        @click="$emit('updateStarSystem', randomSeed)"
         v-tooltip.bottom="{
           value: $t('Use a seed to create a new star system'),
           disabled: isTooltipDisabled,

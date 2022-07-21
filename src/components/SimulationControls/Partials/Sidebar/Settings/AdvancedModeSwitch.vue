@@ -17,7 +17,7 @@ watch(props, () => {
     :label="$t('Advanced Mode')"
     :tooltipText="$t('Additional settings options')"
     :isTooltipDisabled="isTooltipDisabled"
-    v-on:update:modelValue="
+    @update:modelValue="
       $emit('update:isAdvancedSettingsActive', isAdvancedSettingsActive)
     "
   />

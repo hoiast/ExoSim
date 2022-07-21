@@ -29,7 +29,7 @@ watch(props, () => {
       "
       v-model="plotSizeLimit"
       :isTooltipDisabled="isTooltipDisabled"
-      v-on:update:modelValue="$emit('update:plotSizeLimit', plotSizeLimit)"
+      @update:modelValue="$emit('update:plotSizeLimit', plotSizeLimit)"
     />
     <InputNumberWithSlider
       :inputId="`pointsPerSecond`"
@@ -44,7 +44,7 @@ watch(props, () => {
       "
       v-model="pointsPerSecond"
       :isTooltipDisabled="isTooltipDisabled"
-      v-on:update:modelValue="$emit('update:pointsPerSecond', pointsPerSecond)"
+      @update:modelValue="$emit('update:pointsPerSecond', pointsPerSecond)"
     />
   </div>
 </template>

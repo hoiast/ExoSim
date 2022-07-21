@@ -29,7 +29,7 @@ let model = ref(props.modelValue);
         :max="max"
         :step="step"
         style="width: 100%"
-        v-on:input="$emit('update:modelValue', model)"
+        @input="$emit('update:modelValue', model)"
         v-tooltip.bottom="{
           value: tooltipText,
           disabled: isTooltipDisabled,
@@ -41,7 +41,7 @@ let model = ref(props.modelValue);
         :min="min"
         :max="max"
         :step="step"
-        v-on:change="$emit('update:modelValue', model)"
+        @change="$emit('update:modelValue', model)"
       />
     </span>
   </div>

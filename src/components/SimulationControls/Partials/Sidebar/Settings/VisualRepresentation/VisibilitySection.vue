@@ -28,7 +28,7 @@ watch(props, () => {
       :label="$t('Orbits')"
       :tooltipText="$t('Hide / Show orbit lines')"
       :isTooltipDisabled="isTooltipDisabled"
-      v-on:update:modelValue="
+      @update:modelValue="
         $emit('update:areOrbitsVisible', areOrbitsVisible)
       "
     />
@@ -40,14 +40,14 @@ watch(props, () => {
       :label="$t('Star')"
       :tooltipText="$t('Hide / Show star')"
       :isTooltipDisabled="isTooltipDisabled"
-      v-on:update:modelValue="$emit('update:isStarVisible', isStarVisible)"
+      @update:modelValue="$emit('update:isStarVisible', isStarVisible)"
     />
     <InputSwitchWithTitle
       v-model="arePlanetsVisible"
       :label="$t('Planets')"
       :tooltipText="$t('Hide / Show planets')"
       :isTooltipDisabled="isTooltipDisabled"
-      v-on:update:modelValue="
+      @update:modelValue="
         $emit('update:arePlanetsVisible', arePlanetsVisible)
       "
     />
@@ -60,7 +60,7 @@ watch(props, () => {
         :label="$t('Satellites')"
         :tooltipText="$t('Hide / Show satellites')"
         :isTooltipDisabled="isTooltipDisabled"
-        v-on:update:modelValue="
+        @update:modelValue="
           $emit('update:areSatellitesVisible', areSatellitesVisible)
         "
       />

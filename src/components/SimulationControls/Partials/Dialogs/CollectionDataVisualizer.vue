@@ -82,7 +82,7 @@ translatePlot();
     class="z-25 resize justify-between overflow-auto"
     :maximizable="true"
     :modal="false"
-    v-on:update:visible="
+    @update:visible="
       $emit('update:isCollectionVisible', isCollectionVisible)
     "
   >
@@ -97,7 +97,7 @@ translatePlot();
         :label="$t('Export Plot')"
         icon="pi pi-download"
         class="p-button-sm p-button-success"
-        v-on:click="exportChart"
+        @click="exportChart"
         v-tooltip.bottom="{
           value: $t('Export plot to a new window tab'),
           disabled: isTooltipDisabled,

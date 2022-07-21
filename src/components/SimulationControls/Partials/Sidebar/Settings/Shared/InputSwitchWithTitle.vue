@@ -21,7 +21,7 @@ watch(props, () => {
       <InputSwitch
         class="ml-2"
         v-model="model"
-        v-on:change="$emit('update:modelValue', model)"
+        @change="$emit('update:modelValue', model)"
         v-tooltip.bottom="{
           value: tooltipText,
           disabled: isTooltipDisabled,

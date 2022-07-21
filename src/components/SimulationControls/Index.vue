@@ -26,14 +26,14 @@
                   :currentStarSystemName="
                     simulation.configuration.starSystem.name
                   "
-                  v-on:updateStarSystem="setDefaultSystem"
+                  @updateStarSystem="setDefaultSystem"
                 />
               </AccordionTab>
               <AccordionTab :header="$t('Random')">
                 <RandomSystems
                   ref="randomSystems"
                   :isTooltipDisabled="isTooltipDisabled"
-                  v-on:updateStarSystem="setRandomSystem"
+                  @updateStarSystem="setRandomSystem"
                 />
               </AccordionTab>
               <AccordionTab :header="$t('Custom')">
@@ -41,7 +41,7 @@
                   ref="customSystems"
                   :isTooltipDisabled="isTooltipDisabled"
                   :isAdvancedSettingsActive="isAdvancedSettingsActive"
-                  v-on:updateStarSystem="setCustomSystem"
+                  @updateStarSystem="setCustomSystem"
                 />
               </AccordionTab>
             </Accordion>

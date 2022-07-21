@@ -163,7 +163,7 @@ onMounted(() => {
           optionGroupLabel="name"
           :optionGroupChildren="[]"
           style="minwidth: 14rem; width: fit-content"
-          v-on:change="
+          @change="
             () => {
               setCodeAndSystem();
               translateStarColorSelectLabel();
@@ -186,7 +186,7 @@ onMounted(() => {
       :tooltipText="$t('Define a star radius')"
       v-model="customStarSystem.starRadius"
       :isTooltipDisabled="isTooltipDisabled"
-      v-on:update:modelValue="setCodeAndSystem"
+      @update:modelValue="setCodeAndSystem"
     />
     <InputNumberWithSlider
       :inputId="`customPlanetNumberInput`"
@@ -197,7 +197,7 @@ onMounted(() => {
       :tooltipText="$t('Define how many planets compose the star system')"
       v-model="customStarSystem.planetNumber"
       :isTooltipDisabled="isTooltipDisabled"
-      v-on:update:modelValue="setCodeAndSystem"
+      @update:modelValue="setCodeAndSystem"
     />
 
     <Accordion>
@@ -215,7 +215,7 @@ onMounted(() => {
           :tooltipText="$t('Define planet radius')"
           v-model="customStarSystem.planetDetails[index - 1].radius"
           :isTooltipDisabled="isTooltipDisabled"
-          v-on:update:modelValue="setCodeAndSystem"
+          @update:modelValue="setCodeAndSystem"
         />
         <InputNumberWithSlider
           :inputId="`customPlanetSemiMajorInput${index}`"
@@ -226,7 +226,7 @@ onMounted(() => {
           :tooltipText="$t('Define the planet orbit radius')"
           v-model="customStarSystem.planetDetails[index - 1].semiMajor"
           :isTooltipDisabled="isTooltipDisabled"
-          v-on:update:modelValue="setCodeAndSystem"
+          @update:modelValue="setCodeAndSystem"
         />
         <template v-if="isAdvancedSettingsActive">
           <Divider align="center">
@@ -241,7 +241,7 @@ onMounted(() => {
             :tooltipText="$t('Define the planet orbit eccentricity')"
             v-model="customStarSystem.planetDetails[index - 1].eccentricity"
             :isTooltipDisabled="isTooltipDisabled"
-            v-on:update:modelValue="setCodeAndSystem"
+            @update:modelValue="setCodeAndSystem"
           />
           <InputNumberWithSlider
             :inputId="`customPlanetPerihelionLongitudeInput${index}`"
@@ -258,7 +258,7 @@ onMounted(() => {
               customStarSystem.planetDetails[index - 1].longitudePerihelion
             "
             :isTooltipDisabled="isTooltipDisabled"
-            v-on:update:modelValue="setCodeAndSystem"
+            @update:modelValue="setCodeAndSystem"
           />
           <InputNumberWithSlider
             :inputId="`customPlanetOrbitInclinationInput${index}`"
@@ -273,7 +273,7 @@ onMounted(() => {
             "
             v-model="customStarSystem.planetDetails[index - 1].orbitInclination"
             :isTooltipDisabled="isTooltipDisabled"
-            v-on:update:modelValue="setCodeAndSystem"
+            @update:modelValue="setCodeAndSystem"
           />
         </template>
       </AccordionTab>
@@ -305,7 +305,7 @@ onMounted(() => {
         <Button
           icon="pi pi-copy"
           class="p-button ml-2"
-          v-on:click="() => clipBoardCustomJSONCode()"
+          @click="() => clipBoardCustomJSONCode()"
           v-tooltip.bottom="{
             value: $t('Copy the current code to clipboard'),
             disabled: isTooltipDisabled,
@@ -317,7 +317,7 @@ onMounted(() => {
       <Button
         :label="$t('Create Star System')"
         class="p-button-outlined"
-        v-on:click="setUIAndSystem"
+        @click="setUIAndSystem"
         v-tooltip.bottom="{
           value: $t('Use the JSON code to create a star system'),
           disabled: isTooltipDisabled,

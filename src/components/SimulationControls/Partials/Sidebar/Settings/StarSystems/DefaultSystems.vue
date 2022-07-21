@@ -14,7 +14,7 @@ defineProps({
       :label="$t(starSystem.name)"
       :disabled="currentStarSystemName === starSystem.name ? 'disabled' : false"
       class="p-button-outlined"
-      v-on:click="$emit('updateStarSystem', key)"
+      @click="$emit('updateStarSystem', key)"
     />
   </div>
 </template>
