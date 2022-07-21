@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-128 max-h-screen overflow-auto p-card absolute z-10"
+    class="max-h-screen overflow-auto p-card absolute z-10"
     style="overflow: overlay"
   >
     <UpperSection
@@ -194,8 +194,11 @@ export default defineComponent({
     var stats = new Stats();
     stats.domElement.style.position = "absolute";
     stats.domElement.style["z-index"] = "unset";
-    stats.domElement.style.right = "0";
+    stats.domElement.style.bottom = 0;
+    stats.domElement.style.top = "unset";
+    stats.domElement.style.right = 0;
     stats.domElement.style.left = "unset";
+    stats.domElement.style.opacity = 0.2;
     document.body.appendChild(stats.domElement);
 
     // . Init Simulation

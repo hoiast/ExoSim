@@ -33,57 +33,68 @@ watch(selectedLocale, () => {
 </script>
 
 <template>
-  <div class="flex justify-center items-center my-2">
-    <Button
-      :icon="isRunning ? 'pi pi-pause' : 'pi pi-play'"
-      v-on:click="$emit('update:isRunning', !isRunning)"
-      :class="isRunning ? 'p-button-danger' : 'p-button-success'"
-      v-tooltip.right="{
-        value: $t('Pause / Play'),
-        disabled: isTooltipDisabled,
-      }"
-    />
-    <Button
-      :label="
-        isMeasuringBrightness
-          ? $t('Close Brightness Detector')
-          : $t('Open Brightness Detector')
-      "
-      :icon="isMeasuringBrightness ? 'pi pi-times' : 'pi pi-external-link'"
-      :class="isMeasuringBrightness ? 'p-button-danger' : ''"
-      @click="$emit('update:isMeasuringBrightness', !isMeasuringBrightness)"
-      class="ml-4"
-      v-tooltip.bottom="{
-        value: $t('Start brightness measurements'),
-        disabled: isTooltipDisabled,
-      }"
-    />
-    <Button
-      icon="pi pi-question"
-      :class="
-        isTooltipDisabled ? 'opacity-50 p-button-secondary' : 'p-button-success'
-      "
-      class="p-button-rounded p-button-text ml-4"
-      v-tooltip.bottom="{
-        value: tooltipToggleText,
-      }"
-      @click="$emit('update:isTooltipDisabled', !isTooltipDisabled)"
-    />
-
-    <CascadeSelect
-      class="w-20 ml-4"
-      v-model="selectedLocale"
-      :options="locales"
-      optionLabel="name"
-      :optionGroupChildren="[]"
-    />
-    <a href="https://github.com/hoiast/ExoplanetTransitSimulator" target="_blank">
+  <div
+    class="flex flex-wrap justify-center items-center m-2 space-y-2 sm:space-y-0"
+  >
+    <div>
       <Button
-        icon="pi pi-github"
-        class="p-button-rounded p-button-text ml-4"
-        v-tooltip.right="{ value: 'GitHub' }"
+        :icon="isRunning ? 'pi pi-pause' : 'pi pi-play'"
+        @click="$emit('update:isRunning', !isRunning)"
+        :class="isRunning ? 'p-button-danger' : 'p-button-success'"
+        class="text-sm sm:text-base"
+        v-tooltip.right="{
+          value: $t('Pause / Play'),
+          disabled: isTooltipDisabled,
+        }"
       />
-    </a>
+      <Button
+        :label="
+          isMeasuringBrightness
+            ? $t('Close Brightness Detector')
+            : $t('Open Brightness Detector')
+        "
+        :icon="isMeasuringBrightness ? 'pi pi-times' : 'pi pi-external-link'"
+        :class="isMeasuringBrightness ? 'p-button-danger' : ''"
+        @click="$emit('update:isMeasuringBrightness', !isMeasuringBrightness)"
+        class="ml-4 text-sm sm:text-base"
+        v-tooltip.bottom="{
+          value: $t('Start brightness measurements'),
+          disabled: isTooltipDisabled,
+        }"
+      />
+    </div>
+    <div class="flex">
+      <CascadeSelect
+        class="w-20 ml-4"
+        v-model="selectedLocale"
+        :options="locales"
+        optionLabel="name"
+        :optionGroupChildren="[]"
+      />
+      <a
+        href="https://github.com/hoiast/ExoplanetTransitSimulator"
+        target="_blank"
+      >
+        <Button
+          icon="pi pi-github"
+          class="p-button-rounded p-button-text ml-4"
+          v-tooltip.right="{ value: 'GitHub' }"
+        />
+      </a>
+      <Button
+        icon="pi pi-question"
+        :class="
+          isTooltipDisabled
+            ? 'opacity-50 p-button-secondary'
+            : 'p-button-success'
+        "
+        class="p-button-rounded p-button-text ml-4 hidden sm:block"
+        v-tooltip.bottom="{
+          value: tooltipToggleText,
+        }"
+        @click="$emit('update:isTooltipDisabled', !isTooltipDisabled)"
+      />
+    </div>
   </div>
 </template>
 <style scoped></style>
