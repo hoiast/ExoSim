@@ -72,7 +72,7 @@ watch(selectedLocale, () => {
         :optionGroupChildren="[]"
       />
       <a
-        href="https://github.com/hoiast/ExoplanetTransitSimulator"
+        href="https://github.com/hoiast/ExoSim"
         target="_blank"
       >
         <Button

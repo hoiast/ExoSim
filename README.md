@@ -1,11 +1,11 @@
-# Exoplanet Transit Simulator
+# ExoSim - An Exoplanet Transit Simulator
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/hoiast/ExoplanetTransitSimulator/blob/main/README.md)
-[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/hoiast/ExoplanetTransitSimulator/blob/main/README.pt-br.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/hoiast/ExoSim/blob/main/README.md)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/hoiast/ExoSim/blob/main/README.pt-br.md)
 
-#### Live Demo: [GitHub.io](https://hoiast.github.io/ExoplanetTransitSimulator/) 
+# Live Demo: [GitHub.io](https://hoiast.github.io/ExoSim/) 
 
-ExoplanetTransitSimulator is an educational web application for exploring a exoplanet detection technique called **Transit Method**. Simply put, this method analyzes periodic decreases on measured star brightness caused by orbiting planets blocking the light.
+ExoSim is an educational web application for exploring a exoplanet detection technique called **Transit Method**. Simply put, this method analyzes periodic decreases on measured star brightness caused by orbiting planets blocking the light.
 
 This app is designed to be easily extensible and intuitive to use. Some available features are:
 
