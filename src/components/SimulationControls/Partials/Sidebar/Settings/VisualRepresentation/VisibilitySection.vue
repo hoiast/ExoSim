@@ -28,9 +28,7 @@ watch(props, () => {
       :label="$t('Orbits')"
       :tooltipText="$t('Hide / Show orbit lines')"
       :isTooltipDisabled="isTooltipDisabled"
-      @update:modelValue="
-        $emit('update:areOrbitsVisible', areOrbitsVisible)
-      "
+      @update:modelValue="$emit('update:areOrbitsVisible', areOrbitsVisible)"
     />
     <Divider align="center">
       <span>{{ $t("Celestial Bodies") }}</span>
@@ -47,9 +45,7 @@ watch(props, () => {
       :label="$t('Planets')"
       :tooltipText="$t('Hide / Show planets')"
       :isTooltipDisabled="isTooltipDisabled"
-      @update:modelValue="
-        $emit('update:arePlanetsVisible', arePlanetsVisible)
-      "
+      @update:modelValue="$emit('update:arePlanetsVisible', arePlanetsVisible)"
     />
     <template v-if="isAdvancedSettingsActive">
       <Divider align="center">

@@ -82,9 +82,7 @@ translatePlot();
     class="z-25 resize justify-between overflow-auto"
     :maximizable="true"
     :modal="false"
-    @update:visible="
-      $emit('update:isCollectionVisible', isCollectionVisible)
-    "
+    @update:visible="$emit('update:isCollectionVisible', isCollectionVisible)"
   >
     <Vue3ChartJs
       ref="chart"

@@ -71,9 +71,7 @@ watch(props, () => {
           )
         "
         :isTooltipDisabled="isTooltipDisabled"
-        @update:modelValue="
-          $emit('update:areOrbitsTilted', areOrbitsTilted)
-        "
+        @update:modelValue="$emit('update:areOrbitsTilted', areOrbitsTilted)"
       />
       <InputSwitchWithTitle
         v-model="isRotationEnabled"

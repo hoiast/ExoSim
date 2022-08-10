@@ -13,4 +13,5 @@ module.exports = {
     "eslint:recommended",
     "@vue/eslint-config-prettier",
   ],
+  ignorePatterns: ["docs"],
 };
