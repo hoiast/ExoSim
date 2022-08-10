@@ -1,6 +1,6 @@
 <template>
   <div
-    class="max-h-screen overflow-auto p-card absolute z-10"
+    class="max-h-screen overflow-auto p-card absolute z-10 sm:w-128"
     style="overflow: overlay"
   >
     <UpperSection
