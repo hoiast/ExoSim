@@ -4,7 +4,8 @@
 [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/hoiast/ExoSim/blob/main/README.pt-br.md)
 
 ![liveDemo](https://github.com/hoiast/ExoSim/blob/main/liveDemoREADME_1920x1006.jpeg)
-# Live Demo: [GitHub.io](https://hoiast.github.io/ExoSim/) 
+
+# [Live Demo](https://hoiast.github.io/ExoSim/)
 
 ExoSim is an educational web application for exploring a exoplanet detection technique called **Transit Method**. Simply put, this method analyzes periodic decreases on measured star brightness caused by orbiting planets blocking the light.
 
@@ -50,6 +51,7 @@ npm run build
 ## _Acknowledgements_
 
 I would like to thanks _Claudio Mendes Dias de Souza_ for his insightful comments and suggestions about astrobiology and exoplanets detection.
+_Live demo is powered by [Github Pages](https://pages.github.com/) and [Github Actions](https://github.com/features/actions)_
 
 ## _Contact_
 
