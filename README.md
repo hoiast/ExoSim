@@ -5,9 +5,9 @@
 
 ![liveDemo](https://github.com/hoiast/ExoSim/blob/main/liveDemoREADME_1920x1006.jpeg)
 
-# [Live Demo](https://hoiast.github.io/ExoSim/)
+## _[Live demo](https://hoiast.github.io/ExoSim/)_
 
-ExoSim is an educational web application for exploring a exoplanet detection technique called **Transit Method**. Simply put, this method analyzes periodic decreases on measured star brightness caused by orbiting planets blocking the light.
+ExoSim is an educational web application for exploring an exoplanet detection technique called **Transit Method**. Simply put, this method analyzes periodic decreases on measured star brightness caused by orbiting planets blocking the light.
 
 This app is designed to be easily extensible and intuitive to use. Some available features are:
 
@@ -15,7 +15,7 @@ This app is designed to be easily extensible and intuitive to use. Some availabl
 - **Export options for light curves**. Beautiful measurements are meant to be shared. Download your light curve plots as PNG images and send them to everyone;
 - **Multi-language support**. I would love to add more language options myself, but you are free to do it by following the simple instructions under the `i18n` folder.
 
-This project is build upon some technologies and libraries:
+This project is built upon some technologies and libraries:
 
 - [Vue.js](https://vuejs.org/) framework with the [Primevue](https://primefaces.org/primevue/) UI library for a fast and reactive user interface.
 - [Three.js](https://threejs.org/) library for building 3D scenes. Its math utility tools were also used for some linear algebra operations required in the simple, but home brewed, physics engine used in this project.
@@ -51,6 +51,7 @@ npm run build
 ## _Acknowledgements_
 
 I would like to thanks _Claudio Mendes Dias de Souza_ for his insightful comments and suggestions about astrobiology and exoplanets detection.
+
 _Live demo is powered by [Github Pages](https://pages.github.com/) and [Github Actions](https://github.com/features/actions)_
 
 ## _Contact_
