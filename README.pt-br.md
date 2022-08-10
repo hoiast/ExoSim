@@ -22,7 +22,7 @@ Este projeto é construído em cima de algumas tecnologias e bibliotecas:
 - [Tailwind CSS](https://tailwindcss.com/) para ajustes CSS finos.
 - [Vite](https://vitejs.dev/) para um ambiente de desenvolvimento e compilação rápidos.
 
-#Como usar
+# Como usar
 
 #### 1. Instalação do Projeto
 
