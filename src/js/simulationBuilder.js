@@ -27,8 +27,9 @@ export default class Simulation {
 
     // . Frame per second counter
     this.fpsMax = 60;
+    this.safetyMargin = 1.1; //10% more
     this.lastFrameUpdate = new Date().getTime();
-    this.minIntervalBetweenFrames = 1000 / this.fpsMax;
+    this.minIntervalBetweenFrames = 1000 / (this.fpsMax * this.safetyMargin);
 
     //Preserve context
     this.simulationStep = this.simulationStep.bind(this);
