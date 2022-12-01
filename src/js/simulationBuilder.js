@@ -34,7 +34,6 @@ export default class Simulation {
     this.simulationStep = this.simulationStep.bind(this);
     this.setOrbitInclination = this.setOrbitInclination.bind(this);
     this.setStarScale = this.setStarScale.bind(this);
-
   }
 
   start() {
@@ -69,7 +68,6 @@ export default class Simulation {
    * Update physics and its graphical representation
    */
   simulationStep() {
-
     // . Recursive cycle
     requestAnimationFrame(this.simulationStep);
 
@@ -101,8 +99,6 @@ export default class Simulation {
 
     // . Finish performance cycle analysis
     this.stats.end();
-
- 
   }
 
   setupWorld() {
