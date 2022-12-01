@@ -5,7 +5,7 @@
 
 ![liveDemo](https://github.com/hoiast/ExoSim/blob/main/liveDemoREADME_1920x1006.jpeg)
 
-## _[Demo online](https://hoiast.github.io/ExoSim/)_
+## Clique aqui para um _[Demo online](https://hoiast.github.io/ExoSim/)_
 
 ExoSim é uma aplicação web educacional para explorar a técnica de detecção de exoplanetas chamada **Método de Trânsito**. Simplificando, este método analisa diminuições periódicas nas medidas de brilho estrelar causadas por planetas bloqueando a luz durante os seus movimentos orbitais.
 
