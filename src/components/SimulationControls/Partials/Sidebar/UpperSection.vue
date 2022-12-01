@@ -85,7 +85,7 @@ watch(selectedLocale, () => {
             ? 'opacity-50 p-button-secondary'
             : 'p-button-success'
         "
-        class="p-button-rounded p-button-text ml-4 hidden sm:block"
+        class="p-button-rounded p-button-text ml-4 hidden sm:flex"
         v-tooltip.bottom="{
           value: tooltipToggleText,
         }"
