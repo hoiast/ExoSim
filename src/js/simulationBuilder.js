@@ -25,10 +25,16 @@ export default class Simulation {
     this.stats = stats;
     this.stepCallback = function () {};
 
+    // . Frame per second counter
+    this.fpsMax = 60;
+    this.lastFrameUpdate = new Date().getTime();
+    this.minIntervalBetweenFrames = 1000 / this.fpsMax;
+
     //Preserve context
     this.simulationStep = this.simulationStep.bind(this);
     this.setOrbitInclination = this.setOrbitInclination.bind(this);
     this.setStarScale = this.setStarScale.bind(this);
+
   }
 
   start() {
@@ -63,6 +69,16 @@ export default class Simulation {
    * Update physics and its graphical representation
    */
   simulationStep() {
+
+    // . Recursive cycle
+    requestAnimationFrame(this.simulationStep);
+
+    // . Check if simulation should update. Avoid high CPU usage when using a high FPS monitor.
+    const now = new Date().getTime();
+    const timeSinceLastFrame = now - this.lastFrameUpdate;
+    if (timeSinceLastFrame < this.minIntervalBetweenFrames) return;
+    this.lastFrameUpdate = now;
+
     // . Init performance cycle analysis
     this.stats.begin();
 
@@ -86,8 +102,7 @@ export default class Simulation {
     // . Finish performance cycle analysis
     this.stats.end();
 
-    // . Recursive cycle
-    requestAnimationFrame(this.simulationStep);
+ 
   }
 
   setupWorld() {
