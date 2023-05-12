@@ -48,11 +48,7 @@ watch(selectedLocale, () => {
         }"
       />
       <Button
-        :label="
-          isMeasuringBrightness
-            ? $t('Close Brightness Detector')
-            : $t('Open Brightness Detector')
-        "
+        :label="$t('Brightness Detector')"
         :icon="isMeasuringBrightness ? 'pi pi-times' : 'pi pi-external-link'"
         :class="isMeasuringBrightness ? 'p-button-danger' : ''"
         @click="$emit('update:isMeasuringBrightness', !isMeasuringBrightness)"
