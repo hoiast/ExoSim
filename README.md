@@ -2,6 +2,8 @@
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/hoiast/ExoSim/blob/main/README.md)
 [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/hoiast/ExoSim/blob/main/README.pt-br.md)
+[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/hoiast/ExoSim/blob/main/README.es.md)
+[![fr](https://img.shields.io/badge/lang-fr-blue.svg)](https://github.com/hoiast/ExoSim/blob/main/README.fr.md)
 
 ![liveDemo](https://github.com/hoiast/ExoSim/blob/main/liveDemoREADME_1920x1006.jpeg)
 
