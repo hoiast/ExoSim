@@ -19,11 +19,13 @@ const tooltipToggleText = computed(() => {
 });
 const locales = ref([
   { name: "en", code: "en" },
-  { name: "pt", code: "pt-BR" },
+  { name: "es", code: "es" },
+  { name: "fr", code: "fr" },
+  { name: "pt", code: "pt" },
 ]);
 let selectedLocale = ref(
   locales.value.filter(
-    (localElement) => localElement.code === locale.value
+    (localElement) => localElement.code === locale.value.split("-")[0]
   )[0] ?? { name: "en", code: "en" }
 );
 

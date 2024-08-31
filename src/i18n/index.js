@@ -10,6 +10,8 @@ locale property of the i18n instance.
 
 import { createI18n } from "vue-i18n";
 import ptBR from "./pt-BR.json";
+import es from "./es.json";
+import fr from "./fr.json";
 
 const i18n = createI18n({
   legacy: false,
@@ -20,7 +22,9 @@ const i18n = createI18n({
   fallbackWarn: false,
   messages: {
     en: {}, // Translation Keys are defined in english. Therefore, locale messages for "en" may be empty.
-    "pt-BR": ptBR,
+    pt: ptBR,
+    es: es,
+    fr: fr,
   },
 });
 
