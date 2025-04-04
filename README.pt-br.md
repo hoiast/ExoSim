@@ -7,7 +7,7 @@
 
 ![liveDemo](https://github.com/hoiast/ExoSim/blob/main/liveDemoREADME_1920x1006.jpeg)
 
-## Clique aqui para um _[Demo online](https://hoiast.github.io/ExoSim/)_
+## Clique aqui para um _[Demo online](https://hoiast.github.io/ExoSim)_
 
 ExoSim é uma aplicação web educacional para explorar a técnica de detecção de exoplanetas chamada **Método de Trânsito**. Simplificando, este método analisa diminuições periódicas nas medidas de brilho estrelar causadas por planetas bloqueando a luz durante os seus movimentos orbitais.
 
@@ -19,10 +19,10 @@ Esta aplicação é desenhada para ser facilmente extensível e intuitiva para u
 
 Este projeto é construído em cima de algumas tecnologias e bibliotecas:
 
-- _Framework_ [Vue.js](https://vuejs.org/) com a biblioteca de elementos UI [Primevue](https://primefaces.org/primevue/) para uma interface de usuário rápida e reativa.
-- Biblioteca [Three.js](https://threejs.org/) para a construção de cenas 3D. Seu conjunto de ferramentas matemáticas também foram usadas para algumas operações de algebra linear necessárias para o simples, mais caseiro, motor de física utilizado neste projeto.
-- [Tailwind CSS](https://tailwindcss.com/) para ajustes CSS finos.
-- [Vite](https://vitejs.dev/) para um ambiente de desenvolvimento e compilação rápidos.
+- _Framework_ [Vue.js](https://vuejs.org) com a biblioteca de elementos UI [Primevue](https://primevue.org) para uma interface de usuário rápida e reativa.
+- Biblioteca [Three.js](https://threejs.org) para a construção de cenas 3D. Seu conjunto de ferramentas matemáticas também foram usadas para algumas operações de algebra linear necessárias para o simples, mais caseiro, motor de física utilizado neste projeto.
+- [Tailwind CSS](https://tailwindcss.com) para ajustes CSS finos.
+- [Vite](https://vite.dev) para um ambiente de desenvolvimento e compilação rápidos.
 
 # Como usar
 
@@ -38,7 +38,7 @@ npm install
 npm run dev
 ```
 
-#### 3. Lint com [ESLint](https://eslint.org/)
+#### 3. Lint com [ESLint](https://eslint.org)
 
 ```sh
 npm run lint
@@ -52,9 +52,9 @@ npm run build
 
 ## _Agradecimentos_
 
-Eu gostaria de agradecer _Claudio Mendes Dias de Souza_ pelo seus ricos comentários e sugestões sobre astrobiologia e detecção de exoplanetas.
+Eu gostaria de agradecer [_Claudio Mendes Dias de Souza_](https://www.linkedin.com/in/claudiomendes23) pelo seus ricos comentários e sugestões sobre astrobiologia e detecção de exoplanetas.
 
-_O demo online é provido pelo [Github Pages](https://pages.github.com/) e [Github Actions](https://github.com/features/actions)_
+_O demo online é provido pelo [Github Pages](https://pages.github.com/ e [Github Actions](https://github.com/features/actions)_
 
 ## _Contato_
 

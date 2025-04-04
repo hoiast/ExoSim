@@ -7,7 +7,7 @@
 
 ![liveDemo](https://github.com/hoiast/ExoSim/blob/main/liveDemoREADME_1920x1006.jpeg)
 
-## Click here for a _[Live demo](https://hoiast.github.io/ExoSim/)_
+## Click here for a _[Live demo](https://hoiast.github.io/ExoSim)_
 
 ExoSim is an educational web application for exploring an exoplanet detection technique called **Transit Method**. Simply put, this method analyzes periodic decreases on measured star brightness caused by orbiting planets blocking the light.
 
@@ -19,10 +19,10 @@ This app is designed to be easily extensible and intuitive to use. Some availabl
 
 This project is built upon some technologies and libraries:
 
-- [Vue.js](https://vuejs.org/) framework with the [Primevue](https://primefaces.org/primevue/) UI library for a fast and reactive user interface.
-- [Three.js](https://threejs.org/) library for building 3D scenes. Its math utility tools were also used for some linear algebra operations required in the simple, but home brewed, physics engine used in this project.
-- [Tailwind CSS](https://tailwindcss.com/) for fine CSS adjustments.
-- [Vite](https://vitejs.dev/) for fast development environment and building.
+- [Vue.js](https://vuejs.org) framework with the [Primevue](https://primevue.org) UI library for a fast and reactive user interface.
+- [Three.js](https://threejs.org) library for building 3D scenes. Its math utility tools were also used for some linear algebra operations required in the simple, but home brewed, physics engine used in this project.
+- [Tailwind CSS](https://tailwindcss.com) for fine CSS adjustments.
+- [Vite](https://vite.dev) for fast development environment and building.
 
 # How to Use
 
@@ -38,7 +38,7 @@ npm install
 npm run dev
 ```
 
-#### 3. Lint with [ESLint](https://eslint.org/)
+#### 3. Lint with [ESLint](https://eslint.org)
 
 ```sh
 npm run lint
@@ -52,9 +52,9 @@ npm run build
 
 ## _Acknowledgements_
 
-I would like to thanks _Claudio Mendes Dias de Souza_ for his insightful comments and suggestions about astrobiology and exoplanets detection.
+I would like to thanks [_Claudio Mendes Dias de Souza_](https://www.linkedin.com/in/claudiomendes23) for his insightful comments and suggestions about astrobiology and exoplanets detection.
 
-_Live demo is powered by [Github Pages](https://pages.github.com/) and [Github Actions](https://github.com/features/actions)_
+_Live demo is powered by [Github Pages](https://pages.github.com) and [Github Actions](https://github.com/features/actions)_
 
 ## _Contact_
 
