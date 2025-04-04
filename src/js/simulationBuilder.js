@@ -406,6 +406,9 @@ export default class Simulation {
       satellite.updateInnerConf();
       satellite.createOrbits(satellite.graphicalObject);
     }
+
+    // . Reset visibility to current configuration. Upon re-drawing, the visibility of orbits is set to false.
+    this.setOrbitVisibility(this.configuration.orbitVisibility);
   }
 
   /**
@@ -425,6 +428,9 @@ export default class Simulation {
       satellite.updateInnerConf();
       satellite.createOrbits(satellite.graphicalObject);
     }
+
+    // . Reset visibility to current configuration. Upon re-drawing, the visibility of orbits is set to false.
+    this.setOrbitVisibility(this.configuration.orbitVisibility);
   }
   /**
    * Alter the tilt of all bodies. Momentum are also rotated.
